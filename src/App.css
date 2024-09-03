@@ -1,38 +1,126 @@
 .App {
-  text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 30px 350px;
+  padding: 0;
+  display: flex;
+  flex-direction: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+
+.title {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.navigation-list > li{
+  padding-right: 8px;
+  font-size: 20px;
+}
+
+.main {
+  margin: 60px 350px;
+  padding: 
+}
+
+.main > h1{
+  padding-left: 3px;
+  font-weight: bold;
+  font-size:40px;
+}
+
+.code {
+  background-color: #282C34;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.code > .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  color: #AAB2BF;
 }
 
-.App-link {
-  color: #61dafb;
+.contact {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 20px 0;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-card {
+  width: 100%;
+  height: 45px;
+  border: solid;
+  border-radius: 10px;
+  font-size: 25px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.contact-card > a{
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.contact-card:hover{
+  background-color: #E1E1E1;
+}
+
+.line {
+  margin-top: 3px;
+}
+
+.margin-right {
+  margin-right: 7px;
+}
+
+.margin-left {
+  margin-left: 18px;
+}
+
+.const {
+  color: #CD89E1;
+}
+
+.variable {
+  color: #E5BF7A;
+}
+
+.formula {
+  color: #55B6C2;
+}
+
+.property {
+  color: #E6878F;
+}
+
+.value {
+  color: #98C379;
+}
+
+.number {
+ color: #D19A66;
 }

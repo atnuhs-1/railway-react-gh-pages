@@ -1,15 +1,10 @@
 {
-    "presets": [
-      [
-        // 最新のJavaScript環境を使用可能にするプリセット
-        "@babel/preset-env",
-        {
-          // トランスパイル対象の環境を指定
-          "targets": {
-            // 現在実行中のNode.jsバージョンに合わせてトランスパイル
-            "node": "current"
-          }
-        }
-      ]
-    ]
-  }
+  "presets": [
+    // 最新のJavaScript環境を使用可能にするプリセット
+    "@babel/preset-env",
+    ["@babel/preset-react", {
+      "runtime": "automatic"
+    }],
+    "@babel/preset-typescript"
+  ]
+}
